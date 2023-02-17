@@ -1,0 +1,138 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* header */
+
+.header {
+  display: flex;
+  justify-content: center;
+  background-color: dodgerblue;
+  height: 100px;
+  align-items: center;
+}
+
+/* navbar */
+
+.navbar {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: start;
+  flex: 1;
+}
+
+.navbar a {
+  text-decoration: none;
+  padding: 20px;
+  background-color: grey;
+  color: white;
+  text-align: center;
+}
+
+.navbar a:hover {
+  background-color: black;
+  color: white;
+}
+
+/* media query to handle smaller screens than 800px */
+@media (max-width: 800px) and (min-height: 800px) {
+  .navbar {
+    flex-direction: column;
+  }
+}
+
+/* main site content - flexible content */
+.main {
+  display: flex;
+  flex: 1;
+}
+
+.side,
+.middle {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  justify-content: space-between;
+  flex: 50%;
+  height: 50vh;
+  text-align: center;
+  overflow: hidden;
+  padding: 20px;
+}
+
+.middle {
+  background-color: orange;
+}
+
+/* media query handling smaller screens for flexible content */
+
+@media (max-width: 800px) {
+  .main {
+    flex-direction: column;
+  }
+}
+
+.secondmain {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  width: 100vw;
+}
+.firstrow,
+.secondrow {
+  text-align: center;
+  height: auto;
+  padding: 20px 10px;
+}
+
+.firstrow {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+
+.secondrow {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  background-color: aliceblue;
+}
+
+.btn {
+  height: 50px;
+  width: 100px;
+  margin: 0 auto;
+  background-color: lightgreen;
+  color: black;
+  border-radius: 20px;
+  border: none;
+  margin-bottom: 10px;
+}
+
+/* media query to handle smaller screen than 800px */
+
+@media (max-width: 800px) {
+  .secondmain {
+    flex-direction: column;
+  }
+}
+
+/* footer */
+
+.footer {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  background-color: dodgerblue;
+  height: 50px;
+  align-items: center;
+}

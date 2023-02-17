@@ -44,7 +44,7 @@ body {
 }
 
 /* media query to handle smaller screens than 800px */
-@media (max-width: 800px) and (min-height: 800px) {
+@media (max-width: 800px) {
   .navbar {
     flex-direction: column;
   }
